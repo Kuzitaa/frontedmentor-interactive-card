@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/Kuzitaa/frontedmentor-interactive-card)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://kuzitaa.github.io/frontedmentor-interactive-card/)
 
 ## My process
 
