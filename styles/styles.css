@@ -1,0 +1,215 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+main {
+    width: 100%;
+}
+.background {
+    display: inline-block;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 225px;
+    background-image: url('../images/bg-main-mobile.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.card-container {
+    position: relative;
+    margin: 0 auto;
+    width: 375px;
+    height: 225px;
+}
+.card-image-back {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    width: 280px;
+    height: 150px;
+    background-image: url('../images/bg-card-back.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.card-image-back--nmbrs {
+    position: absolute;
+    top: 67px;
+    right: 36px;
+    font-size: 0.7rem;
+    color: var(--White);
+}
+.card-image-front {
+    position: absolute;
+    bottom: -40px;
+    left: 5%;
+    width: 280px;
+    height: 150px;
+    background-image: url('../images/bg-card-front.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    color: var(--Light-grayish-violet);
+}
+.card-image-front--logo {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 28px;
+    background-image: url('../images/card-logo.svg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.card-image-front--crd-nmbr {
+    position: absolute;
+    bottom: 46px;
+    left: 22px;
+    font-size: 1.1rem;
+    letter-spacing: 0.14rem;
+}
+.card-image-front--crd-name {
+    position: absolute;
+    bottom: 16px;
+    left: 22px;
+    font-size: 0.65rem;
+    letter-spacing: 0.02rem;
+}
+.card-image-front--crd-exp-mm {
+    position: absolute;
+    bottom: 16px;
+    right: 40px;
+    font-size: 0.65rem;
+}
+.card-image-front--crd-exp-s {
+    position: absolute;
+    bottom: 16px;
+    right: 36px;
+    font-size: 0.65rem;
+}
+.card-image-front--crd-exp-yy {
+    position: absolute;
+    bottom: 16px;
+    right: 22px;
+    font-size: 0.65rem;
+}
+
+.complete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 88%;
+}
+.complete-icon {
+    display: inline-block;
+    background-image: url('../images/icon-complete.svg');
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.complete-form--p1 {
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    color: var(--Very-dark-violet);
+}
+.complete-form--p2 {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: var(--Dark-grayish-violet);
+}
+.complete-form button {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 88%;
+    max-width: 480px;
+}
+form label {
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+    letter-spacing: 0.06rem;
+    font-weight: 500;
+    color: var(--Very-dark-violet);
+}
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 1.02rem;
+    font-family: 'Space Grotesk', sans-serif;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 5px;
+}
+::placeholder {
+    color: var(--Light-grayish-violet);
+}
+.form-div {
+    display: flex;
+    justify-content: space-between;
+}
+.divcard-exp {
+    width: 48%;
+}
+.divcard-exp input {
+    width: 47%;
+}
+.divcard-exp--inputs {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+.divcard-cvc {
+    width: 48%;
+
+}
+.divcard-cvc--input {
+    margin-top: 6px;
+}
+.divcard-cvc input {
+    width: 100%;
+}
+form button{
+    height: 50px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+}
+
+.inactive {
+    display: none;
+}

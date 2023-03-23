@@ -1,0 +1,69 @@
+main {
+    display: flex;
+}
+.background {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 100vh;
+    margin-bottom: 0;
+    background-image: url('../images/bg-main-desktop.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.complete-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 33%;
+}
+
+form {
+    justify-content: center;
+    margin: 0 18% 0 auto;
+    min-width: 280px;
+    width: 30%;
+}
+
+.card-container {
+    position: relative;
+    top: calc(50% - 162px);
+    left: 30%;
+    width: 375px;
+    height: 225px;
+}
+.card-image-back {
+    position: absolute;
+    top: 175px;
+    right: 5%;
+    width: 280px;
+    height: 150px;
+    background-image: url('../images/bg-card-back.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.card-image-front {
+    position: absolute;
+    bottom: 80px;
+    left: 5%;
+    width: 280px;
+    height: 150px;
+    background-image: url('../images/bg-card-front.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    color: var(--Light-grayish-violet);
+}
+
+form label {
+    font-size: 0.75rem;
+}
+
+.inactive {
+    display: none;
+}

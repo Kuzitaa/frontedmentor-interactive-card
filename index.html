@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 900px)">
+</head>
+<body>
+  <main>
+    <div class="background">
+      <div class="card-container">
+        <div class="card-image-back">
+          <span class="card-image-back--nmbrs">000</span>
+        </div>
+        <div class="card-image-front">
+          <span class="card-image-front--logo"></span>
+          <span class="card-image-front--crd-nmbr">0000 0000 0000 0000</span>
+          <span class="card-image-front--crd-name">JANE APPLESEED</span>
+          <span class="card-image-front--crd-exp-mm">00</span> 
+          <span class="card-image-front--crd-exp-s">/</span> 
+          <span class="card-image-front--crd-exp-yy">00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="complete-form inactive">
+      <span class="complete-icon"></span>
+      <p class="complete-form--p1">THANK YOU!</p>
+      <P class="complete-form--p2">We've added your card details</P>
+      <button>Continue</button>
+    </div>
+      
+    <form class="main-form" action="">
+      <label for="card-name">CARDHOLDER NAME</label>
+      <input id="card-name" type="text" placeholder="e.g. Jane Appleseed" maxlength="20" required>
+
+      <label for="card-nmb">CARD NUMBER</label>
+      <input class="imput-nmb" id="card-nmb" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" required>
+      
+      <div class="form-div">
+        <div class="divcard-exp">
+          <label for="card-exp-m card-exp-y">EXP. DATE (MM/YY)</label>
+          <div class="divcard-exp--inputs">
+            <input class="imput-nmb" id="card-exp-m" type="text" placeholder="MM" maxlength="2" required>
+            <input class="imput-nmb" id="card-exp-y" type="text" placeholder="YY" maxlength="2" required>
+          </div>
+        </div>
+        
+        <div class="divcard-cvc">
+          <label for="card-cvc">CVC</label>
+          <div class="divcard-cvc--input">
+            <input class="imput-nmb" id="card-cvc" type="text" placeholder="e.g. 123" maxlength="3" required>
+          </div>        
+        </div>
+      </div>
+
+      <button class="bttn" type="button">Confirm</button>
+    </form>
+  </main>
+
+  
+
+  
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
